@@ -1,15 +1,206 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Tu Nombre de Autor</title>
-</head>
-<body>
-  <h1>Tu Nombre de Autor</h1>
-  <p>Autor de "Título de tu libro"</p>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <p>Contacto: 
-    <a href="mailto:tucorreo@email.com">nefelocoxis@gmail.com</a>
-  </p>
+<title>Mundus Clarisae</title>
+
+<style>
+body {
+    margin: 0;
+    background-color: #f9e59c;
+    font-family: "Baskerville Old Face", serif;
+}
+
+/* ENCABEZADO */
+header {
+    width: 95%;
+    background-color: #ffda48;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 20px;
+    border-radius: 15px;
+    z-index: 1000;
+}
+
+/* PIE */
+footer {
+        width: 95%;
+    background-color: #ffda48;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+header, footer {
+    width: 95%;
+    margin: 20px auto;
+    background-color: #ffda48;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+/* CONTENIDO */
+main {
+    width: 70%;
+    margin: 0 auto;
+    margin: 40px auto 20px auto;
+}
+
+.rojo {
+    color: #ff0000;
+}
+
+/* TÍTULOS */
+h2 {
+    text-align: center;
+}
+
+/* CAJA IMAGEN + TEXTO */
+.caja {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.caja img {
+    max-width: 350px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.caja-texto {
+    flex: 1;
+}
+
+/* TEXTO CENTRADO */
+.texto-centrado {
+    text-align: center;
+    margin: 20px 0;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+    <h1><i>Mundus Clarisae</i></h1>
+    <h2>página personal de Valentín Massara, autor de <i>La señorita Clarisa Klein</i></h2>
+</header>
+
+<main>
+
+    <h2>Sobre el autor</h2>
+
+    <div class="caja">
+        <img src="00.png" alt="Descripción de imagen">
+        <div class="caja-texto">
+            <p>
+                Valentín Massara, nacido en Castelli (Bs. As., Argentina) en 1984. Profesor de biología. Escribe y dibuja cosas.
+            </p>
+<p>Su escritura se inclina a la ciencia ficción satírica. Se declara a favor de los adverbios, contar cuando hay que contar, 
+    y la tercera persona omnisciente (sin despreciar las otras).</p>
+    <p>Top 3 escritores: Voltaire, Stanisław Lem y Gilbert K. Chesterton.</p>
+    <p>En 2026 (si los dioses lo permiten) publicará la novela <i>La señorita Clarisa Klein</i>, 
+        una historia de origen superheroica que es autoconclusiva y no una precuela de historias posteriores. 
+        Con <i>Clarisa Klein</i>, se propone una colección de aventuras autoconclusivas e independientes, al estilo de Sherlock Holmes o Conan el bárbaro.
+</p>
+<p>Contacto: <a href="mailto:nefelocoxis@gmail.com">nefelocoxis@gmail.com</a>
+      </p>
+        </div>
+    </div>
+
+    
+
+    <h2>Títulos</h2>
+
+    <div class="texto-centrado">
+        <p>
+            (por ahora solo uno disponible, pero ¡paciencia!)
+        </p>
+    </div>
+
+    <!-- Copiás lo de arriba si querés repetir estructura -->
+    <div class="caja">
+        <img src="01.png" alt="Otra imagen">
+        <div class="caja-texto">
+            <h2>
+                <span class="rojo">Próximamente</span>
+            </h2>    <h2>La señorita Clarisa Klein
+            </h2>    <p>Novela (Kindle y tapa blanda). 242 pp.
+            </p>    <p>Clarisa Klein es una maestra de jardín que a ratos conduce a sus alumnos, a ratos es conducida por ellos. 
+                En una visital del jardín a un museo, sufre un pequeño accidente, de los que dan grandes poderes y alguna responsabilidad.
+            </p>    <p>Mientras, un insecto de un tamaño que debería ser ilegal deambula por la ciudad, amenazando la vida y la propiedad, 
+                siendo una fuente de problemas tanto para humanos como para sí mismo. ¿Debemos ser éticos, aunque el universo no lo sea? 
+                Bueno, no importa por el momento. En el calor de la situación, una oscura agencia estatal busca reclutar a Clarisa 
+                para ungirla como una especie de poderosa super… eh, maestra de jardín capaz de abordar la crisis.
+            </p>    <p>En esta historia todo es lo que parece, aunque lo que parece es algo fuera del tarro. 
+                Una aventura apta para todo público en la que la ciencia (y el fútbol y la burocracia) 
+                son una excusa para el sarcasmo y la fantasía.
+                
+            </p>
+        </div>
+    </div>
+
+    <div class="caja">
+        <img src="02.png" alt="Otra imagen">
+        <div class="caja-texto">
+              <h2>Héroe de la nación
+            </h2>    <p>Historia corta para <i>Kindle</i> (62 pp.).
+            </p>    <p>Una aventura de Clarisa Klein, el ladrillo volador conocido como <i>Sietecolores</i> en las ocasiones heroicas.
+            </p>    <p>
+                El Gilberto, flamante presidente del pueblo argilandés, recibe la noticia de un atentado en curso y cree que es contra él. 
+                Al mismo tiempo, la Selección de Argilandia se juega las eliminatorias contra Perú. 
+                Clarisa necesita asegurarse que el presidente llegue al suelo con el menor ruido posible, y los jugadores, 
+                al estadio a tiempo para el partido. ¿Podrá Clarisa salvar al zeppelin de la Selección? 
+                ¿Sobrevivirá el zeppelin al rescate de Clarisa? ¿Cómo ve el presidente el futuro del maquinismo? 
+                La gravedad, ¿es subjetiva? Y lo que Argilandia de verdad se pregunta: ¿El Narigón Mazzoni está para jugar desde el arranque?
+            </p>    <p>Una aventura superheroica en tono paródico, pero en la que el superhéroe es casi la única nota de sensatez 
+                en un mundo desbocado.
+            </p>
+            <p><a href="https://a.co/d/0i98o21w">Ver en <i>Amazon</i></a>
+            </p>
+            <p><a href="https://www.goodreads.com/book/show/250685813-h-roe-de-la-naci-n">Ver en <i>Goodreads</i></a>
+            </p>
+        </div>
+    </div>
+
+    <div class="caja">
+        <img src="03.png" alt="Otra imagen">
+        <div class="caja-texto">
+            <h2>
+                <span class="rojo">Próximamente</span>
+            </h2>    <h2>Retorno al Coronel Rex
+            </h2>    <p>Historia corta para <i>Kindle</i>.
+            </p>    <p>La República de Argilandia es un país demasiado ficticio. En los ochenta del siglo XX, 
+                el entonces candidato al Nobel de literatura Leandro V. Barroetaveña concedió una entrevista para clarificar su rol 
+                en las conspiraciones militares de la década rexista (1960). Además de adentrarse en su relación 
+                con el popular coronel Adonis Rex (presidente de la república en el período 1962-69), Barroetaveña nos ofrece 
+                un meditado punto de vista acerca de cuestiones políticas y sociales que, para él, son narrativas. 
+                La hegemonía rexista se nos muestra como un caso en el cual el sistema conspira contra sus creadores, y los personajes ficticios, contra su autor.
+
+            </p>    <p>Esta historia de ficción especulativa, que no deja de ser una pieza de humor subterráneo, 
+                está escrita en un formato heterodoxo (se encuadra como una entrevista de una revista de la época), 
+                pero el curso de la conversación lleva al lector por un <i>set up</i> necesario, un buen desarrollo, algunos giros de trama 
+                y un inquietante <i>pay off</i>.
+
+            </p>    
+        </div>
+    </div>
+
+</main>
+
+<footer>
+    <p>Contacto (por las dudas)</p>
+       <p> <a href="mailto:nefelocoxis@gmail.com">nefelocoxis@gmail.com</a>
+      </p>
+</footer>
+
 </body>
 </html>
