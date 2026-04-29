@@ -13,32 +13,16 @@ body {
     font-family: "Baskerville Old Face", serif;
 }
 
+  p {
+      font-size: 20px;
+    }
+
 /* ENCABEZADO */
-header {
-    width: 95%;
-    background-color: #ffda48;
-    color: rgb(0, 0, 0);
-    text-align: center;
-    padding: 20px;
-    border-radius: 15px;
-    z-index: 1000;
-}
-
-/* PIE */
-footer {
-        width: 95%;
-    background-color: #ffda48;
-    color: rgb(0, 0, 0);
-    text-align: center;
-    padding: 15px;
-    border-radius: 15px;
-}
-
 header, footer {
     width: 95%;
     margin: 20px auto;
     background-color: #ffda48;
-    color: rgb(0, 0, 0);
+    color: black;
     text-align: center;
     padding: 20px;
     border-radius: 15px;
@@ -46,8 +30,8 @@ header, footer {
 
 /* CONTENIDO */
 main {
-    width: 70%;
-    margin: 0 auto;
+    width: 90%;
+    max-width: 900px;
     margin: 40px auto 20px auto;
 }
 
@@ -61,6 +45,7 @@ h2 {
 }
 
 /* CAJA IMAGEN + TEXTO */
+
 .caja {
     display: flex;
     align-items: flex-start;
@@ -78,10 +63,40 @@ h2 {
     flex: 1;
 }
 
+@media (max-width: 700px) {
+    .caja {
+        flex-direction: column;
+        align-items: center;
+        text-align: left;
+    }
+
+    .caja img {
+        max-width: 100%;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 /* TEXTO CENTRADO */
 .texto-centrado {
     text-align: center;
     margin: 20px 0;
+}
+@media (max-width: 700px) {
+    p {
+        font-size: 18px;
+    }
+
+    h1 {
+        font-size: 1.6rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
 }
 </style>
 
@@ -126,33 +141,12 @@ h2 {
         </p>
     </div>
 
-    <!-- Copiás lo de arriba si querés repetir estructura -->
-    <div class="caja">
-        <img src="01.png" alt="Otra imagen">
-        <div class="caja-texto">
-            <h2>
-                <span class="rojo">Próximamente</span>
-            </h2>    <h2>La señorita Clarisa Klein
-            </h2>    <p>Novela (Kindle y tapa blanda). 242 pp.
-            </p>    <p>Clarisa Klein es una maestra de jardín que a ratos conduce a sus alumnos, a ratos es conducida por ellos. 
-                En una visital del jardín a un museo, sufre un pequeño accidente, de los que dan grandes poderes y alguna responsabilidad.
-            </p>    <p>Mientras, un insecto de un tamaño que debería ser ilegal deambula por la ciudad, amenazando la vida y la propiedad, 
-                siendo una fuente de problemas tanto para humanos como para sí mismo. ¿Debemos ser éticos, aunque el universo no lo sea? 
-                Bueno, no importa por el momento. En el calor de la situación, una oscura agencia estatal busca reclutar a Clarisa 
-                para ungirla como una especie de poderosa super… eh, maestra de jardín capaz de abordar la crisis.
-            </p>    <p>En esta historia todo es lo que parece, aunque lo que parece es algo fuera del tarro. 
-                Una aventura apta para todo público en la que la ciencia (y el fútbol y la burocracia) 
-                son una excusa para el sarcasmo y la fantasía.
-                
-            </p>
-        </div>
-    </div>
 
+<div class="texto-centrado"><h1>Héroe de la nación</h1> </div>
     <div class="caja">
         <img src="02.png" alt="Otra imagen">
         <div class="caja-texto">
-              <h2>Héroe de la nación
-            </h2>    <p>Historia corta para <i>Kindle</i> (62 pp.).
+                 <p>Historia corta para <i>Kindle</i> (62 pp.).
             </p>    <p>Una aventura de Clarisa Klein, el ladrillo volador conocido como <i>Sietecolores</i> en las ocasiones heroicas.
             </p>    <p>
                 El Gilberto, flamante presidente del pueblo argilandés, recibe la noticia de un atentado en curso y cree que es contra él. 
@@ -171,21 +165,41 @@ h2 {
         </div>
     </div>
 
+    <h2><span class="rojo">Próximamente</span></h2>
+<div class="texto-centrado"><h1>La señorita Clarisa Klein</h1></div>
+    <div class="caja">
+        <img src="01.png" alt="Otra imagen">
+        <div class="caja-texto">
+                <p>Novela (Kindle y tapa blanda). 242 pp.
+            </p>    <p>Clarisa Klein es una maestra de jardín que a ratos conduce a sus alumnos, a ratos es conducida por ellos. 
+                En una visital del jardín a un museo, sufre un pequeño accidente, de los que dan grandes poderes y alguna responsabilidad.
+            </p>    <p>Mientras, un insecto de un tamaño que debería ser ilegal deambula por la ciudad, amenazando la vida y la propiedad, 
+                siendo una fuente de problemas tanto para humanos como para sí mismo. ¿Debemos ser éticos, aunque el universo no lo sea? 
+                Bueno, no importa por el momento. En el calor de la situación, una oscura agencia estatal busca reclutar a Clarisa 
+                para ungirla como una especie de poderosa super… eh, maestra de jardín capaz de abordar la crisis.
+            </p>    <p>En esta historia todo es lo que parece, aunque lo que parece es algo fuera del tarro. 
+                Una aventura apta para todo público en la que la ciencia (y el fútbol y la burocracia) 
+                son una excusa para el sarcasmo y la fantasía.
+                
+            </p>
+        </div>
+    </div>
+
+    <h2><span class="rojo">Próximamente</h2>
+<div class="texto-centrado"><h1></span>Retorno al Coronel Rex</h1></div>
     <div class="caja">
         <img src="03.png" alt="Otra imagen">
         <div class="caja-texto">
-            <h2>
-                <span class="rojo">Próximamente</span>
-            </h2>    <h2>Retorno al Coronel Rex
-            </h2>    <p>Historia corta para <i>Kindle</i>.
-            </p>    <p>La República de Argilandia es un país demasiado ficticio. En los ochenta del siglo XX, 
+            
+            <p>Historia corta para <i>Kindle</i>.</p>
+            <p>La República de Argilandia es un país demasiado ficticio. En los ochenta del siglo XX, 
                 el entonces candidato al Nobel de literatura Leandro V. Barroetaveña concedió una entrevista para clarificar su rol 
                 en las conspiraciones militares de la década rexista (1960). Además de adentrarse en su relación 
                 con el popular coronel Adonis Rex (presidente de la república en el período 1962-69), Barroetaveña nos ofrece 
                 un meditado punto de vista acerca de cuestiones políticas y sociales que, para él, son narrativas. 
-                La hegemonía rexista se nos muestra como un caso en el cual el sistema conspira contra sus creadores, y los personajes ficticios, contra su autor.
-
-            </p>    <p>Esta historia de ficción especulativa, que no deja de ser una pieza de humor subterráneo, 
+                La hegemonía rexista se nos muestra como un caso en el cual el sistema conspira contra sus creadores, 
+                y los personajes ficticios, contra su autor.</p>
+                <p>Esta historia de ficción especulativa, que no deja de ser una pieza de humor subterráneo, 
                 está escrita en un formato heterodoxo (se encuadra como una entrevista de una revista de la época), 
                 pero el curso de la conversación lleva al lector por un <i>set up</i> necesario, un buen desarrollo, algunos giros de trama 
                 y un inquietante <i>pay off</i>.
