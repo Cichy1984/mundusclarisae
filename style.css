@@ -100,8 +100,10 @@ body {
     margin-bottom: 10px;
 }
 
-.contenido h2:first-child {
-    margin-top: 0;
+.contenido h6 {
+    font-size: 1.1rem;
+    text-align: center;
+    margin-bottom: 10px;
 }
 
 /* -------------------------
@@ -155,6 +157,11 @@ body {
     text-align: left;
 }
 
+iframe.pdf {
+    width: 100%;
+    height: 80vh;
+    border: none;
+}
 /* -------------------------
    SPOTIFY
 ------------------------- */
