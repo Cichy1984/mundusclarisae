@@ -18,6 +18,7 @@ body {
     line-height: 1.7;
 }
 
+
 /* -------------------------
    HEADER
 ------------------------- */
@@ -76,8 +77,14 @@ body {
 ------------------------- */
 
 .cuerpo {
-    background-image: url("image/fondo01.jpg");
+    background-image: url("image/fondo03.jpg");
     background-repeat: repeat;
+    padding: 20px 0;
+}
+
+.fondo-especial {
+    background-image: url("image/fondo02.jpg");
+background-repeat: repeat;
     padding: 20px 0;
 }
 
@@ -131,7 +138,7 @@ body {
 ------------------------- */
 
 .caja-info {
-    background-image: url("image/fondo03.jpg");
+    background-image: url("image/fondo02.jpg");
     background-repeat: repeat;
     padding: 10px 10px;
     display: flex;
