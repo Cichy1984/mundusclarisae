@@ -222,3 +222,84 @@ iframe.pdf {
     }
 
 }
+
+
+
+
+-------------------
+
+/* CARRUSEL DE IMÁGENES */
+
+.carrusel {
+    width: 100%;
+    max-width: 750px;
+    margin: 25px auto;
+    text-align: center;
+}
+
+.carrusel-imagenes {
+    width: 100%;
+}
+
+.carrusel-item {
+    margin: 0;
+}
+
+.carrusel-item[hidden] {
+    display: none;
+}
+
+.carrusel-item img {
+    display: block;
+    max-width: 420px;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+    object-fit: contain;
+    border-radius: 25px;
+}
+
+.carrusel-item figcaption {
+    margin: 12px 0;
+    font-size: 0.9em;
+    text-align: center;
+}
+
+.carrusel-controles {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 12px;
+}
+
+.carrusel-controles button {
+    border: none;
+    background: none;
+    font-size: 1.2em;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+.carrusel-controles button:hover {
+    opacity: 0.6;
+}
+
+.carrusel-contador {
+    font-size: 0.9em;
+    min-width: 10px;
+}
+
+/* Ajustes para teléfonos */
+
+@media (max-width: 600px) {
+    .carrusel-item img {
+        max-height: 680px;
+    }
+
+    .carrusel-controles {
+        gap: 18px;
+    }
+}
+
