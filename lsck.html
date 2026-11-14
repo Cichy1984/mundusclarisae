@@ -9,7 +9,8 @@
 
     <link rel="icon" type="image/png" href="icono.png">
     <!-- Fuente Garamond -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">    
+    <script src="carrusel.js" defer></script>
 </head>
 
 <body>
@@ -23,6 +24,7 @@
             <nav class="menu-botones">
                 <a href="titulos.html" class="boton-menu"><b>títulos de la serie</b></a>
                 <a href="autor.html" class="boton-menu"><b>el autor</b></a>
+                <a href="galeria.html" class="boton-menu"><b>galería de dibujos</b></a>
             </nav>
         </div>
     </header>
@@ -93,11 +95,31 @@ Este es el resumen sin contexto:</p>
 
             <br>
             <p>Algunas fotos (la tabla de contenido oculta más de lo que dice).</p>
-            <img src="image/libro01.jpg" alt="La señorita Clarisa Klein, Sietecolores" class="imagen-pequena">
-             <img src="image/indice.jpg" alt="La señorita Clarisa Klein, Sietecolores" class="imagen-pequena">
-              <img src="image/libro03.jpg" alt="La señorita Clarisa Klein, Sietecolores" class="imagen-pequena">
-<br>
-   
+   <div class="carrusel">
+  <div class="carrusel-imagenes">
+
+    <figure class="carrusel-item">
+      <img src="image/libro01.jpg" alt="Descripción">
+    </figure>
+
+    <figure class="carrusel-item" hidden>
+      <img src="image/indice.jpg" alt="Descripción">
+    </figure>
+
+    <figure class="carrusel-item" hidden>
+      <img src="image/libro03.jpg" alt="Descripción">
+    </figure>
+  </div>
+
+  <div class="carrusel-controles">
+    <button type="button" class="carrusel-anterior" aria-label="Imagen anterior">❮</button>
+     <span class="carrusel-contador" aria-live="polite">1</span>
+    <button type="button" class="carrusel-siguiente" aria-label="Imagen siguiente">❯</button>
+  </div>  
+  </div>
+
+
+
             <br>
     <img src="image/perfection.jpg" alt="La señorita Clarisa Klein, Sietecolores" class="imagen-pequena">
         
