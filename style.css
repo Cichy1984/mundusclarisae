@@ -76,13 +76,13 @@ body {
 ------------------------- */
 
 .cuerpo {
-    background-image: url("image/fondo03.jpg");
+    background-image: url("image/fondodibujos01.jpg");
     background-repeat: repeat;
     padding: 20px 0;
 }
 
 .fondo-especial {
-    background-image: url("image/fondo02.jpg");
+    background-image: url("image/fondodibujos02.jpg");
 background-repeat: repeat;
     padding: 20px 0;
 }
@@ -101,15 +101,15 @@ background-repeat: repeat;
 }
 
 .contenido h2 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
 }
 
 .contenido h6 {
     font-size: 1.1rem;
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
 }
 
 /* -------------------------
@@ -137,13 +137,13 @@ background-repeat: repeat;
 ------------------------- */
 
 .caja-info {
-    background-image: url("image/fondo02.jpg");
+    background-image: url("image/fondo01.jpg");
     background-repeat: repeat;
     padding: 10px 10px;
     display: flex;
     gap: 15px;
     align-items: flex-start;
-    margin: 10px 0;
+    margin: 0px 0;
 }
 
 .caja-imagen {
@@ -160,6 +160,56 @@ background-repeat: repeat;
 .caja-texto p {
     text-align: justify;
 }
+
+/* -------------------------
+   CAJAS ADICIONALES
+------------------------- */
+
+.caji-info {
+    background-image: url("image/fondo02.jpg");
+    background-repeat: repeat;
+    padding: 10px 10px;
+    margin: 0px 0;
+}
+
+.caji-imagen {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    flex-shrink: 0;
+}
+
+.caji-texto {
+    flex: 1;
+}
+
+.caji-texto p {
+    text-align: justify;
+}
+
+.cajo-info {
+    background-image: url("image/fondo01.jpg");
+    background-repeat: repeat;
+    padding: 10px 10px;
+    margin: 0px 0;
+}
+
+.cajo-imagen {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    flex-shrink: 0;
+}
+
+.cajo-texto {
+    flex: 1;
+}
+
+.cajo-texto p {
+    text-align: justify;
+}
+
+
 
 
 iframe.pdf {
